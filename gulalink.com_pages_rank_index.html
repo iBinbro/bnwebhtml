@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<!-- saved from url=(0046)https://www.gulalink.com/pages/rank/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="theme-color" content="#FFF">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="keywords" content="rank">
+    <title></title>
+    <link rel="stylesheet" href="./gulalink.com_pages_rank_index_files/rank.css">
+    <!--    <link rel="stylesheet" href="swiper.min.css">-->
+    <!-- Include stylesheet -->
+    <link href="./gulalink.com_pages_rank_index_files/swiper.min.css" rel="stylesheet">
+    <!-- Include the Swiper library -->
+    <script src="./gulalink.com_pages_rank_index_files/swiper.min.js"></script>
+
+
+    <style>
+
+        .swiper-container {
+            position: relative;
+            width: 100%;
+            margin-top: 0;
+            height: 178px;
+        }
+
+        .swiper-slide {
+            width: 282px;
+            height: 148px;
+            /*background: url(images/bg_item1.png);*/
+            background-size: cover;
+            color: #fff;
+            margin-left: 0;
+            box-shadow: 0px 10px 20px rgba(172, 89, 39, .2);
+            border-radius: 20px;
+            text-align: center;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+        }
+
+        .item1 {
+            background: url(images/bg_item1.png);
+            background-size: cover;
+        }
+
+        .item2 {
+            background: url(images/bg_item2.png);
+            background-size: cover;
+        }
+
+        .item3 {
+            background: url(images/bg_item3.png);
+            background-size: cover;
+        }
+
+        .item4 {
+            background: url(images/bg_item4.png);
+            background-size: cover;
+        }
+
+        .item5 {
+            background: url(images/bg_item5.png);
+            background-size: cover;
+        }
+		.icon_top { background:url(images/icon_top.png) no-repeat; background-size:cover; z-index:9; }
+
+        .item .black {
+            display: block;
+            width: 282px;
+            height: 148px;
+            position: absolute;
+            z-index: 2;
+            background: rgba(0, 0, 0, .5);
+            border-radius: 20px;
+        }
+
+        .item_current .black,
+        .item_finish .black {
+            display: none;
+        }
+
+        .swiper-slide .arrow {
+            position: absolute;
+            left: 0;
+            top: 0;
+            border-radius: 20px 0 7px 0;
+            padding: 4px 10px;
+            background: rgba(251, 235, 223, .8);
+            font-size: 12px;
+            color: #002369;
+            display: inline-block;
+        }
+
+        .swiper-slide .lv {
+            position: absolute;
+            left: 20px;
+            top: 36px;
+            font-size: 24px;
+        }
+
+        .swiper-slide .value {
+            position: absolute;
+            left: 20px;
+            top: 80px;
+            height: 4px;
+            width: 90px;
+            background: url(images/bg_value.png) repeat-x;
+            border-radius: 2px;
+        }
+
+        .swiper-slide .value span {
+            display: block;
+            background: #fff;
+            height: 4px;
+            border-radius: 2px;
+        }
+
+        .swiper-slide .text_value {
+            position: absolute;
+            left: 20px;
+            top: 94px;
+            font-size: 12px;
+        }
+
+        .swiper-slide .text_icon {
+            position: absolute;
+            left: 20px;
+            top: 114px;
+            font-size: 12px;
+        }
+
+        .swiper-slide .icon,
+		.swiper-slide .icon_top	{
+            position: absolute;
+            right: -1px;
+            top: -9px;
+            width: 114px;
+            height: 114px;
+            color: #8E422C;
+            font-size: 14px;
+            text-align: center;
+        }
+
+        .swiper-slide .icon1 {
+            /*background: url(images/item_award1.png) no-repeat;*/
+            background-size: cover;
+        }
+
+        .swiper-slide .icon2 {
+            background: url(images/item_award2.png) no-repeat;
+            background-size: cover;
+        }
+
+        .swiper-slide .icon3 {
+            background: url(images/item_award3.png) no-repeat;
+            background-size: cover;
+        }
+
+        .swiper-slide .icon4 {
+            background: url(images/item_award4.png) no-repeat;
+            background-size: cover;
+        }
+
+        .swiper-slide .icon5 {
+            background: url(images/item_award5.png) no-repeat;
+            background-size: cover;
+        }
+
+        .swiper-slide .icon6 {
+            background: url(images/item_award6.png) no-repeat;
+            background-size: cover;
+        }
+
+        .swiper-slide .icon7 {
+            background: url(images/item_award7.png) no-repeat;
+            background-size: cover;
+        }
+
+        .swiper-slide .icon_top span {
+            display: block;
+            text-align: center;
+            padding-top: 78px;
+        }
+
+        .swiper-pagination,
+        .swiper-button-prev,
+        .swiper-button-next {
+            display: none;
+        }
+
+        .swiper-slide-shadow-left,
+        .swiper-slide-shadow-right {
+            border-radius: 20px;
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+
+
+
+<div id="vueapp" class="app"><div class="question"></div> <!----> <div class="page_head"><div class="text">Level</div></div> <div class="the_rank"><div class="head"><div class="head_photo"></div> <div class="head_exp" style="margin: 0px auto;"><span class="lv lv7">Lv.NaN</span>
+                Experience：0
+            </div> <div class="rank_con"><div class="swiper-container swiper-container-coverflow swiper-container-3d swiper-container-horizontal swiper-container-ios"> <div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px);"></div>    </div></div></div> <div class="next">You need NaN experience points to reach next level</div></div> <div class="title_how">How to level up?</div> <div class="the_list"><!----> <div class="item"><div class="icon"><img src="./gulalink.com_pages_rank_index_files/icon_diamond.png" alt=""></div> <div class="text"><div class="bold">Recharge</div> <div class="text_1">You can get 1 experience point from each diamond you recharge( zero from free diamonds)</div></div> <div onclick="goToApp(&#39;recharge&#39;)" class="btn"><img src="./gulalink.com_pages_rank_index_files/btn_go.png" alt=""></div></div> <div class="item"><div class="icon"><img src="./gulalink.com_pages_rank_index_files/icon_gift.png" alt=""></div> <div class="text"><div class="bold">gift</div> <div class="text_1" style="white-space: pre-wrap;">For gift sending, 1 diamond brings you 2 experience points (based on value)</div></div> <div onclick="goToApp(&#39;gift&#39;)" class="btn"><img src="./gulalink.com_pages_rank_index_files/btn_go.png" alt=""></div></div> <div class="item" style="display: none;"><div class="icon"><img src="./gulalink.com_pages_rank_index_files/icon_call.png" alt=""></div> <div class="text"><div class="bold">Make a call</div> <div class="text_1">You can get 1 experience point if you finish 1 minute call </div></div> <div onclick="goToApp(&#39;call&#39;)" class="btn"><img src="./gulalink.com_pages_rank_index_files/btn_go.png" alt=""></div></div> <div class="item" style="height: 112px !important;"><div class="icon"><img src="./gulalink.com_pages_rank_index_files/icon_info.png" alt=""></div> <div class="text"><div class="bold">Complete the profile</div> <div class="text_1" style="white-space: pre-wrap;">You can get 1 experience point when you complete your profile for the first time </div></div> <div onclick="goToApp(&#39;completeMaterial&#39;)" class="btn"><img src="./gulalink.com_pages_rank_index_files/btn_go.png" alt=""></div></div></div></div>
+
+<script src="./gulalink.com_pages_rank_index_files/vue@2.6.14"></script>
+<script src="./gulalink.com_pages_rank_index_files/axios.min.js"></script>
+<!-- Swiper JS Vue -->
+<script src="./gulalink.com_pages_rank_index_files/vue-awesome-swiper.js"></script>
+<!--<script src="https://unpkg.com/vue-i18n/dist/vue-i18n.js"></script>-->
+<script src="./gulalink.com_pages_rank_index_files/vue-i18n.js"></script>
+
+<script>
+    function getQueryVariable(variable) {
+        const query = window.location.search.substring(1);
+        const vars = query.split("&");
+        for (let i = 0; i < vars.length; i++) {
+            const pair = vars[i].split("=");
+            if (pair[0] === variable) {
+                return pair[1];
+            }
+        }
+        return 0;
+    }
+
+    // 准备翻译的语言环境信息
+    const messages = {
+        cn: {
+            message: {
+                grade: '等级',
+                howToUpgrade: '如何升级?',
+                signIn: '签到',
+                gradeDescribe: "签到有机会获取一定数量的经验",
+                recharge: "充值",
+                rechargeDescribe: "每充值1钻石可获得1点经验(赠送钻石无经验)",
+                gift: "礼物",
+                giftsDescribe: "赠送礼物根据价值1钻石获得2点经验",
+                call: "打电话",
+                callDescribe: "完成1分钟通话可获得1点经验",
+                completeMaterial: "完善资料",
+                completeMaterialDescribe: "首次完善资料，单项获得1点经验",
+                nextRank: "距离下一等级差xx经验",
+                experience: "经验",
+                upgradeReward: "升级奖励",
+                rankMedalReward: "等级勋章奖励",
+                reachExperience: "达到xx经验",
+                rewardHasBeenIssued: "奖励已发放",
+                toBeUpgraded: "待升级",
+                rewardingManual: "奖励说明",
+                freeChat: "<span>1.免费畅聊：</span>文本消息永久免费聊天",
+                rankMedalRewardDetails: "<span>2.等级勋章奖励：</span>彰显非凡身份",
+                crossRegionalPrivileges: "<span>3.跨区特权：</span>在首页可跨不同地区聊天",
+                videoCardPrivileges: "<span>4.视频卡：</span>可抵扣部分消费，体验通话",
+                treasureChestReward: "<span>5.宝箱奖励：</span>可得到一定数量的惊喜钻石",
+
+            }
+        },
+        en: {
+            message: {
+                grade: 'Level',
+                howToUpgrade: 'How to level up?',
+                signIn: 'Sign in ',
+                gradeDescribe: "Signing in may bring you some experience points",
+                recharge: "Recharge",
+                rechargeDescribe: "You can get 1 experience point from each diamond you recharge( zero from free diamonds)",
+                gift: "gift",
+                giftsDescribe: "For gift sending, 1 diamond brings you 2 experience points (based on value)",
+                call: "Make a call",
+                callDescribe: "You can get 1 experience point if you finish 1 minute call ",
+                completeMaterial: "Complete the profile",
+                completeMaterialDescribe: "You can get 1 experience point when you complete your profile for the first time ",
+                nextRank: "You need xx experience points to reach next level",
+                experience: "Experience",
+                upgradeReward: "reward",
+                rankMedalReward: "Badge reward",
+                reachExperience: "Achieve xx experience level",
+                rewardHasBeenIssued: "Awards issued",
+                toBeUpgraded: "To be upgraded",
+                rewardingManual: "Reward description",
+                freeChat: "<span>1.Free chatting:</span>unlimited free message",
+                rankMedalRewardDetails: "<span>2.Level badge rewarding:</span>show special identity",
+                crossRegionalPrivileges: "<span>3.Unlocking exotic privilege:</span>make video chat in diffrent regions",
+                videoCardPrivileges: "<span>4.Video card:</span>offset partial assumption, get video chatting experience",
+                treasureChestReward: "<span>5.Box gift:</span>get certain free diamonds",
+            }
+        },
+        es: {//西语
+            message: {
+                grade: 'Nivel',
+                howToUpgrade: '¿Cómo subir el nivel?',
+                signIn: 'Check-in ',
+                gradeDescribe: "Podrás ganar experiencia por Check-in",
+                recharge: "Recargar",
+                rechargeDescribe: "Obtener 1 experiencia por cada gemas recargada (no ganas experiencia por las gemas regaladas)",
+                gift: "Regalo",
+                giftsDescribe: "Da regalos para obtener 2 puntos de experiencia según el valor de 1 diamante",
+                call: "Hacer llamadas",
+                callDescribe: "La llamada de 1 minuto te brinda 1 punto de experiencia ",
+                completeMaterial: "Completa el perfil",
+                completeMaterialDescribe: "Completar el perfil por primera vez te brinda 1 punto de experiencia",
+                nextRank: "Necesitas xx experiencia para alcanzar el siguiente nivel",
+                experience: "Experiencia",
+                upgradeReward: "Premio de nivel subido",
+                rankMedalReward: "Premio de nivel llegado",
+                reachExperience: "xx experiencia ",
+                rewardHasBeenIssued: "Ya ha llegado el premio",
+                toBeUpgraded: "Nivel pendiente",
+                rewardingManual: "Introducción del premio",
+                freeChat: "<span>1.Charla gratis: </span>Enviar mensajes gratis para siempre ",
+                rankMedalRewardDetails: "<span>2.Marco especial: </span>Ser sobresaliente de los demás",
+                crossRegionalPrivileges: "<span>3.Desbloquear todas zonas: </span>Charlar con las chicas de todo el mundo ",
+                videoCardPrivileges: "<span>4.Tarjeta de video: </span>Poder probar la videollamada gratis con tarjetas de video",
+                treasureChestReward: "<span>5.Caja misteriosa:</span> Hay gemas gratis dentro",
+            }
+        },
+        tr: {//土语
+            message: {
+                grade: 'Seviye',
+                howToUpgrade: 'Seviye Nasıl Yükseltilir',
+                signIn: 'Giriş Yap',
+                gradeDescribe: "Giriş yaparak deneyim puanları kazanma fırsatını yakalayın",
+                recharge: "Yükleme yap",
+                rechargeDescribe: "Yüklediğiniz her elmastan 1 deneyim puanı kazanın.(Hediye elmaslar deneyim puanına dahil değildir.)",
+                gift: "hediye",
+                giftsDescribe: "Gönderdiğiniz hediyeler size 2 deneyim puanı kazandırır.",
+                call: "Ara",
+                callDescribe: "1 dakika görüntülü konuşma yapmak size 1 deneyim puanı kazandırır.",
+                completeMaterial: "Profili Tamamla",
+                completeMaterialDescribe: "Profili ilk tamamlamanızda, eksiksiz tamamlamak size 1 deneyimpuanı kazandırır.",
+                nextRank: "Bir sonraki seviye farkına xx deneyimi",
+                experience: "Deneyim",
+                upgradeReward: "Yükseltme ödülü",
+                rankMedalReward: "Rozet ödülü",
+                reachExperience: "xx deneyimine ulaşın",
+                rewardHasBeenIssued: "Ödül verildi",
+                toBeUpgraded: "Yükseltilecek",
+                rewardingManual: "Ödül açıklaması",
+                freeChat: "<span>1.Ücretsiz sohbet:</span>Kısa mesajlarla kalıcı ücretsiz sohbet kazanabilirsin.",
+                rankMedalRewardDetails: "<span>2.Seviye Madalya Ödülü:</span>Kimliğinizi olağanüstü gösterebilirsin",
+                crossRegionalPrivileges: "<span>3.Bölgeler arası ayrıcalıklar:</span>Ana sayfada farklı bölgeler arasında sohbet edebilirsin",
+                videoCardPrivileges: "<span>4.Video kartı:</span>Kullanarak Aramayı deneyimleyebilirsin.",
+                treasureChestReward: "<span>5.Hazine kutusu ödülü:</span>Belirli sayıda sürpriz elmas kazanabilirsin",
+
+            }
+        },
+        in: {//印尼
+            message: {
+                grade: 'level',
+                howToUpgrade: 'Bagaimana caranya update?',
+                signIn: 'Check in',
+                gradeDescribe: "Check in untuk memiliki kesempatan mendapatkan sejumlah poin pengalaman tertentu",
+                recharge: "Topup",
+                rechargeDescribe: "Anda mendapatkan 1 poin pengalaman dari setiap topup  (tidak ada pengalaman dari diamond gratis)",
+                gift: "hadiah",
+                giftsDescribe: "Anda akan mendapatkan 2 poin pengalaman jika Anda mengirim hadiah (sesuai nilai diamond)",
+                call: "Video call",
+                callDescribe: "Anda akan mendapatkan 1 poin pengalaman pada setiap video call 1 menit.",
+                completeMaterial: "Lengkapi profil",
+                completeMaterialDescribe: "Lengkapi informasi profile Anda pada pertama kali akan dapat 1 poin pengalaman",
+                nextRank: "Pengalaman xx capai ke level berikutnya",
+                experience: "Pengalaman",
+                upgradeReward: "Imbalan untuk update",
+                rankMedalReward: "Imbalan medali",
+                reachExperience: "Sudah capai xx poin pengalaman",
+                rewardHasBeenIssued: "Imbalan telah diberikan",
+                toBeUpgraded: "Menunggu update",
+                rewardingManual: "Penjelasan Imbalan ",
+                freeChat: "<span>1.Obrolan gratis：</span>Kirim pesan tanpa batas",
+                rankMedalRewardDetails: "<span>2.Imbalan medali untuk level:</span>menampilkan identitas Anda yang istimewa",
+                crossRegionalPrivileges: "<span>3.Hak istimewa untuk beralih wilayah:</span> Mengobrol dan video call  dengan pengguna di wilayah lain",
+                videoCardPrivileges: "<span>4.Kartu video:</span>ini bisa dipakai untuk mencoba video call",
+                treasureChestReward: "<span>5.Imbalan Peti:</span>Anda bisa mendapatkan sejumlah diamond",
+            }
+        },
+        hi: {//印度
+            message: {
+                grade: 'स्तर',
+                howToUpgrade: 'अपने स्तर को कैसे बढ़ायें?',
+                signIn: 'साइन इन करें',
+                gradeDescribe: "साइन इन करने से आपको कुछ अनुभव पोईंट प्राप्त हो सकते हैं",
+                recharge: "रीचार्ज",
+                rechargeDescribe: "आप अपने द्वारा रिचार्ज किए गए प्रत्येक हीरे से 1 अनुभव पोईंट प्राप्त कर सकते हैं (उपहार भेजने से अनुभव नहीं मिल सकता है)",
+                gift: "उपहार",
+                giftsDescribe: "उपहार भेजने के लिए, 1 हीरा आपके लिए 2 अनुभव पोईंट लाता है (मूल्य के आधार पर)",
+                call: "कॉल करें",
+                callDescribe: "1 मिनट की कॉल आपके लिए 1 अनुभव पोईंट लाता है",
+                completeMaterial: "प्रोफ़ाइल को पूरा करें",
+                completeMaterialDescribe: "पहली बार प्रोफ़ाइल को पूरा करने से आपको 1 अनुभव पोईंट मिलता है",
+                nextRank: "अगले स्तर तक पहुंचने के लिए आपको xx अनुभव बिंदुओं की आवश्यकता है",
+                experience: "अनुभव",
+                upgradeReward: "अपग्रेड इनाम",
+                rankMedalReward: "लेवल अपग्रेड इनाम",
+                reachExperience: "xx अनुभव स्तर प्राप्त करें",
+                rewardHasBeenIssued: "अवॉर्ड जारी किया गया",
+                toBeUpgraded: "अपग्रेड किया जाना",
+                rewardingManual: "पुरस्कृत मैनुअल",
+                freeChat: "<span>1.फ़्री चैटिंग:</span>अनलिमिटेड फ़्री संदेश",
+                rankMedalRewardDetails: "<span>2.पुरस्कृत लेवल बिल्ला:</span>विशेष पहचान दिखाएं",
+                crossRegionalPrivileges: "<span>3.इंटरसेक्शनल विशेषाधिकार अनलॉक करना: </span>विभिन्न क्षेत्रों में वीडियो चैट करें",
+                videoCardPrivileges: "<span>4.वीडियो कार्ड:</span>आंशिक धारणा को ऑफसेट करें, वीडियो चैटिंग अनुभव प्राप्त करें",
+                treasureChestReward: "<span>5.गिफ़्ट बॉक्स:</span>कुछ फ़्री हीरे प्राप्त करें",
+            }
+        },
+        vi: {//越南
+            message: {
+                grade: 'Level',
+                howToUpgrade: 'Làm sao để tăng cấp?',
+                signIn: 'Check in',
+                gradeDescribe: "Check-in hàng ngày có thể đạt được số kinh nghiệm nhất định",
+                recharge: "Nạp tiền",
+                rechargeDescribe: "Mỗi kim cương được nạp trị giá 1 kinh nghiệm ( không bao gồm kim cương tặng kèm)",
+                gift: "quà tặng",
+                giftsDescribe: "Tặng quà có thể tăng thêm 2 điểm kinh nghiệm cho mỗi kim cương sử dụng",
+                call: "Thực hiện cuộc gọi",
+                callDescribe: "Hoàn thành 1 phút cuộc gọi video nhận được 1 điểm kinh nghiệm ",
+                completeMaterial: "Hoàn thiện dữ liệu ं",
+                completeMaterialDescribe: "Hoàn thiện dữ liệu cá nhân có thể nhận được 1 điểm kinh nghiệm ",
+                nextRank: "Bạn cần xx điểm kinh nghiệm để đạt cấp độ tiếp theo",
+                experience: "Kinh nghiệm",
+                upgradeReward: "Nâng cấp phần thưởng",
+                rankMedalReward: "Phần thưởng nâng cấp level",
+                reachExperience: "Đạt được cấp độ kinh nghiệm xx",
+                rewardHasBeenIssued: "Phần thưởng đã được gửi ",
+                toBeUpgraded: "Chờ nâng cấp",
+                rewardingManual: "Cơ cấu tặng thưởng ",
+                freeChat: "<span>1.Chat miễn phí: </span>gửi tin nhắn miễn phí không giới hạn.",
+                rankMedalRewardDetails: "<span>2.Tặng huân chương khi nâng cấp level:</span>thể hiện đẳng cấp riêng biệt ",
+                crossRegionalPrivileges: "<span>3.Đặc quyền mở khoá xuyên khu vực:</span>chat chit với các cô gái từ khắp nơi trên thế giới ",
+                videoCardPrivileges: "<span>4.Thẻ video chat:</span> có thể khấu trừ một phần tiêu dùng, trải nghiệm cuộc gọi ",
+                treasureChestReward: "<span>5.Hộp quà:</span>nhận số lượng kim cương nhất định ",
+            }
+        },
+        pt: {//葡语
+            message: {
+                grade: 'Nível',
+                howToUpgrade: 'Como fazer o upgrade?',
+                signIn: 'Check-in',
+                gradeDescribe: "Faça check-in para ter a oportunidade de ganhar certos pontos de experiência",
+                recharge: "Recarregar",
+                rechargeDescribe: "Pode ganhar 1 ponto de experiência para cada recarga de 1 diamante (sem experiência para enviar presente de diamantes)",
+                gift: "Presente",
+                giftsDescribe: "Com base no valor de presnete, 1 diamante traz 2 pontos de experiência no envio de presentes ",
+                call: "Chamar",
+                callDescribe: "1 minuto de chamada traz 1 ponto de experiência",
+                completeMaterial: "Complete o perfil",
+                completeMaterialDescribe: "Completar o perfil pela primeira vez traz 1 ponto de experiência",
+                nextRank: "Precisa de xx experiência para alcançar o próximo nível",
+                experience: "Experiência",
+                upgradeReward: "Prêmios",
+                rankMedalReward: "Prêmios de Medalha ",
+                reachExperience: "xx de experiência",
+                rewardHasBeenIssued: "Prêmios foram emitidos",
+                toBeUpgraded: "A ser atualizado",
+                rewardingManual: "Descrição do prêmio",
+                freeChat: "<span>1.Chat grátis:</span>Envie mensagens grátis para sempre ",
+                rankMedalRewardDetails: "<span>2.Recompensa de medalha:</span>um sinal de status excepcional",
+                crossRegionalPrivileges: "<span>3.Desbloquear todas as áreas:</span>Converse com meninas de todo o mundo",
+                videoCardPrivileges: "<span>4.Cartão de vídeo:</span> pode testar chamadas de vídeo gratuitas por um tempo  com cartão de vídeo",
+                treasureChestReward: "<span>5.Recompensa do baú:</span>uma certa quantidade de diamantes pode ser obtida",
+            }
+        },
+        th: {//泰语
+            message: {
+                grade: 'ระดับ',
+                howToUpgrade: 'จะอัพเกรดได้อย่างไร?',
+                signIn: 'เช็คอิน',
+                gradeDescribe: "เช็คอินเพื่อมีโอกาสได้รับประสบการณ์จำนวนที่จำกัด",
+                recharge: "เติมเงิน",
+                rechargeDescribe: "รับ 1 คะแนนประสบการณ์ทุกการเติมเงิน 1 เพชร (ไม่มีประสบการณ์สำหรับเพชรของขวัญ)",
+                gift: "ของขวัญ",
+                giftsDescribe: "มอบของขวัญเพื่อรับค่าประสบการณ์ 2 แต้ม ตามมูลค่าของเพชร 1 เม็ด ",
+                call: "โทร",
+                callDescribe: "คุณจะได้รับค่าประสบการณ์ 1 คะแนน หลังจากโทร 1 นาทีเสร็จ",
+                completeMaterial: "กรอกข้อมูล",
+                completeMaterialDescribe: "กรอกข้อมูลครั้งแรก รับค่าประสบการณ์ 1 แต้มในรายการเดียว",
+                nextRank: "คุณต้องมีคะแนนประสบการณ์ xx เพื่อไปถึงระดับต่อไป",
+                experience: "ประสบการณ์",
+                upgradeReward: "อัพเกรดรางวัล",
+                rankMedalReward: "ส่งการ์ดวีดีโอ2ใบ",
+                reachExperience: "บรรลุ xx ระดับประสบการณ์",
+                rewardHasBeenIssued: "ออกรางวัลแล้ว",
+                toBeUpgraded: "ที่จะอัพเกรด",
+                rewardingManual: "คำแนะนำสำหรับรางวัล",
+                freeChat: "<span>1.แชทฟรี:</span>ข้อความแชทฟรีตลอดเวลา",
+                rankMedalRewardDetails: "<span>2.รางวัลอันดับ:</span>สถานะดีเด่น",
+                crossRegionalPrivileges: "<span>3.สิทธิ์ข้ามภูมิภาค:</span>แชทข้ามภูมิภาคบนโฮมเพจ",
+                videoCardPrivileges: "<span>4.การ์ดวิดีโอ:</span>สามารถหักค่าใช้จ่ายได้บางส่วน สัมผัสประสบการณ์การโทร",
+                treasureChestReward: "<span>5.โบนัสหีบสมบัติ:</span>คุณสามารถรับเพชรเซอร์ไพรส์จำนวนหนึ่ง",
+            }
+        },
+        ar: {//阿拉伯语
+            message: {
+                grade: 'المستوى',
+                howToUpgrade: 'كيف أزيد المستوى ؟',
+                signIn: 'تسجيل الحضور',
+                gradeDescribe: "قم بتسجيل الحضور لكي تحصل على فرصة كسب نقطة لزيادة المستوى",
+                recharge: "شحن",
+                rechargeDescribe: "شراء ماسة واحدة يمنحك نقطة واحدة لزيادة\nالمستوى (هدية الماس من النظام بدون نقطة)",
+		gift: "هدية",
+                giftsDescribe: "إرسال الهدايا للبنات يمنحك 2 \n نقطة من كل ماسة واحدة ",
+                call: "مكالمه",
+                callDescribe: "كل دقيقة من المكالمة تمنحك نقطة واحدة لزيادة المستوى",
+                completeMaterial: "إكمال الملف",
+                completeMaterialDescribe: "كلما تملئ بند واحد كلما زاد نقطة واحدة لزيادة \n المستوى من خلال إكمال الملف لأول مرة",
+                nextRank: "للوصول للمستوى التالي تحتاج إلى  xx  خبره",
+                experience: "خبرة",
+                upgradeReward: "مكافأة الترقية",
+                rankMedalReward: "جائزة ترتيب الوسام",
+                reachExperience: "وصلت  إلى xx خبره",
+                rewardHasBeenIssued: "تم إرسال المكافأة",
+                toBeUpgraded: "بنتظار الترقيه",
+                rewardingManual: "وصف المكافأة",
+                freeChat: "<span>1.دردشة مجانية:</span> دردشة مجانية دائمة مع رسائل نصية",
+                rankMedalRewardDetails: "<span>2.جائزة ميدالية المستوى:</span> توضح هوية خاصه واستثنائية",
+                crossRegionalPrivileges: "<span>3.امتيازات فتح المناطق:</span>الدردشة مع دول  العالم المختلفة على الصفحة الرئيسية",
+                videoCardPrivileges: "<span>4.بطاقة الفيديو:</span>يمكن خصم جزء من الاستهلاك لتجربة المكالمة",
+                treasureChestReward: "<span>5.جائزة صندوق الكنز:</span>احصل على عدد معين من الماس كهديه",
+            }
+        },
+    }
+
+    // 通过选项创建 VueI18n 实例
+    const i18n = new VueI18n({
+        locale: 'en', // 设置地区
+        messages, // 设置地区信息
+    })
+    Vue.use(VueAwesomeSwiper)
+
+    // 通过 `i18n` 选项创建 Vue 实例
+    new Vue({
+        i18n,
+        el: '#vueapp',
+        components: {
+            LocalSwiper: VueAwesomeSwiper.swiper,
+            LocalSlide: VueAwesomeSwiper.swiperSlide,
+        },
+        data: {
+            expe: 0,
+            areaCode: 0,
+            rankConfig: [],
+            nextRank: {},
+			isShow:false,
+            isShowSingIn:false,
+            swiperOption: {
+                effect: 'coverflow',
+                grabCursor: true,
+                centeredSlides: true,
+                slidesPerView: 'auto',
+                coverflowEffect: {
+                    rotate: 50,
+                    stretch: 0,
+                    depth: 100,
+                    modifier: 1,
+                    slideShadows: true
+                },
+                pagination: {
+                    el: '.swiper-pagination'
+                }
+            }
+        },
+        created: function () {
+            this.expe = getQueryVariable("expe");
+            this.areaCode = getQueryVariable("areaCode");
+            this.$i18n.locale = this.toLocale();
+            this.getByRankConfigByAreaCode()
+            this.isShowSingIn=getQueryVariable("appname")=='infome'
+        },
+        methods: {
+            onSetTranslate() {
+                console.log('onSetTranslate')
+            },
+            getByRankConfigByAreaCode() {
+                let that = this;
+                let url = 'https://' + window.location.host + '/app/getByRankConfigByAreaCode/' + this.areaCode
+                axios.post(url).then(response => {
+                  that.rankConfig = response.data.data;
+                  that.getNextRank()
+                })
+            },
+            getNextRank() {
+                this.rankConfig.some(item => {
+                    if (item.howExp > this.expe) {
+                        this.nextRank = item;
+                        return true;
+                    }
+                })
+            },
+            toLocale() {
+                switch (parseInt(this.areaCode)) {
+                    case 1:
+                        return "in";
+                    case 2:
+                        return "ar";
+                    case 3:
+                        return "hi";
+                    case 6:
+                        return "tr";
+                    case 8:
+                        return "es";
+                    case 9:
+                        return "pt";
+                    case 10:
+                        return "ru";
+                    case 11:
+                        return "th";
+                    default:
+                        return "en";
+                }
+            },
+            getBgPhoto(url) {
+                return {backgroundImage: 'url(' + url + ')'}
+            },
+			show(){
+			  this.isShow=!this.isShow
+			}
+			
+        },
+        computed: {
+            getMsg() {
+                let number = this.nextRank.howExp - getQueryVariable("expe");
+                return this.$t("message.nextRank").replace("xx", number);
+            },
+            direction(){
+                return this.areaCode==2?'rtl':null;
+            }
+        }
+    }).$mount('#vueapp')
+
+    function goToApp(pageUrl) {
+        try {
+            app.goto(pageUrl)
+        } catch (e) {
+        }
+        try {
+            window.webkit.messageHandlers.ExitAPP.postMessage(pageUrl);
+        } catch (e) {
+        }
+        try {
+            flutterapp.postMessage(pageUrl);
+        } catch (e) {
+        }
+    }
+
+    function goBack() {
+        try {
+            app.goto('goback')
+        } catch (e) {
+        }
+        try {
+            app.goBack();
+        } catch (e) {
+        }
+        try {
+            flutterapp.postMessage("goback");
+        } catch (e) {
+        }
+        try {
+            window.history.back();
+        } catch (e) {
+        }
+    }
+</script>
+
+
+<style lang="scss" scoped="">
+    .example-3d {
+        width: 100%;
+        height: 400px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .swiper {
+        height: 100%;
+        width: 100%;
+
+    .swiper-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        height: 300px;
+        text-align: center;
+        font-weight: bold;
+        font-size: $ font-size-huge *2;
+        background-color: #2C8DFB;
+        background-position: center;
+        background-size: cover;
+        color: $ white;
+    }
+
+    .swiper-pagination {
+	display:none;
+    /deep/ .swiper-pagination-bullet.swiper-pagination-bullet-active {
+        background-color: $ white;
+    }
+
+    }
+</style>
+
+
+</body></html>
